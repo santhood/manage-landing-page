@@ -79,14 +79,14 @@ export default function Footer() {
         <nav className="items-star mx-auto flex w-full max-w-lg justify-between px-6 text-neutral-200 lg:col-[2/3] lg:row-[1/3]">
           <ul className="flex flex-col gap-y-2">
             {menu_1.map((link) => (
-              <li>
+              <li key={crypto.randomUUID()}>
                 <a href={link.route}>{link.label}</a>
               </li>
             ))}
           </ul>
           <ul className="flex flex-col gap-y-2">
             {menu_2.map((link) => (
-              <li>
+              <li key={crypto.randomUUID()}>
                 <a href={link.route}>{link.label}</a>
               </li>
             ))}
@@ -95,7 +95,7 @@ export default function Footer() {
 
         <nav className="flex items-center justify-between lg:col-[1/2]">
           {social_media.map((link) => (
-            <a href={link.route}>
+            <a key={crypto.randomUUID()} href={link.route}>
               <img
                 src={link.icon}
                 alt={`${link.alt} icon image`}
