@@ -86,7 +86,7 @@ export default function Testimonials() {
                 />
               </picture>
               <p className="font-bold">{testimonial.name}</p>
-              <p className="mt-4 max-w-[28.25rem] text-neutral-300">
+              <p className="mt-4 max-w-[28.25rem] text-sm text-neutral-300 [@media(min-width:375px)]:text-base">
                 {testimonial.description}
               </p>
             </div>
