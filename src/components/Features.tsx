@@ -39,7 +39,7 @@ export default function Features() {
 
         <ol className="flex flex-col gap-y-10 pb-28 xl:max-w-[33.125rem]">
           {features.map((feature) => (
-            <li>
+            <li key={crypto.randomUUID()}>
               <div className="grid grid-cols-[4rem_1fr] items-center gap-4 xl:gap-x-8">
                 <div className="flex justify-center rounded-full bg-primary-100 py-1 font-bold text-neutral-100">
                   {feature.index}
