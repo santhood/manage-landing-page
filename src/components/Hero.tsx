@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="section relative pb-28 pt-28 xl:pt-44">
+    <section className="section relative pb-28 pt-28 xl:pt-52">
       <div className="mx-auto flex max-w-screen-md flex-col gap-y-2 xl:container xl:flex-row-reverse xl:justify-between">
         <picture>
           <img

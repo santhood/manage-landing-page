@@ -18,7 +18,7 @@ export default function Header() {
   }
 
   return (
-    <header className="section absolute inset-x-0 top-0 z-50 flex h-24 items-center">
+    <header className="section absolute inset-x-0 top-0 z-50 flex h-24 items-center xl:h-32">
       <div className="container w-full">
         <div className="flex items-center justify-between">
           <a href="/" className="w-32">
