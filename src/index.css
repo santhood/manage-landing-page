@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply block w-max rounded-full px-10 py-3 font-bold transition-colors duration-200;
+  }
+  .btn-primary {
+    @apply btn bg-primary-100 text-white shadow-[2px_4px_10px_hsl(12,88%,59%,0.35)] hover:bg-opacity-60;
+  }
+
+  .btn-primary--contrast {
+    @apply btn bg-white text-primary-100 hover:text-opacity-60;
+  }
+
+  .section {
+    @apply px-6 xl:px-12;
+  }
+}
+
+@layer utilities {
+  /* For Webkit-based browsers (Chrome, Safari and Opera) */
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* For IE, Edge and Firefox */
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .scrolling {
+    @apply snap-x snap-mandatory overflow-x-auto overscroll-x-contain scroll-smooth [&>*]:snap-start;
+  }
+
+  .block-scroll {
+    @apply h-dvh overflow-hidden;
+  }
+}
+
+body {
+  line-height: 1.8;
+  font-family: "Be Vietnam Pro", sans-serif;
+  color: hsl(228, 39%, 23%);
+  background-color: white;
+}
