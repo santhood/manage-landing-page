@@ -33,7 +33,10 @@ export default function Header() {
                 <li key={crypto.randomUUID()}>
                   <a
                     href={link.route}
-                    onClick={() => setShowMenu((prev) => !prev)}
+                    onClick={() => {
+                      setShowMenu((prev) => !prev)
+                      document.body.classList.toggle("block-scroll")
+                    }}
                     className="hover:text-neutral-300"
                   >
                     {link.label}
